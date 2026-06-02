@@ -366,7 +366,7 @@ class Depth_Parallax_Widget extends \Elementor\Widget_Base {
 					'px' => [ 'min' => 120, 'max' => 360 ],
 				],
 				'selectors'  => [
-					'{{WRAPPER}} .card' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .cards' => '--depth-card-width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);

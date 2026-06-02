@@ -29,6 +29,9 @@
   gap: 30px;
   align-items: start;
   justify-items: center;
+  max-width: 100%;
+  min-width: 0;
+  --depth-card-width: 175px;
 }
 
 .elementor-widget-depth_parallax_widget .card {
@@ -42,7 +45,8 @@
   transform-style: preserve-3d;
   transform: translatez(35px);
   transition: transform 200ms ease-out;
-  width: 175px;
+  max-width: 100%;
+  width: min(100%, var(--depth-card-width));
   text-align: center;
 }
 .elementor-widget-depth_parallax_widget .card[data-card-link] {
@@ -155,11 +159,4 @@
 
 .twitter__icon {
   height: 30px;
-}
-
-@media (max-width: 767px) {
-  .elementor-widget-depth_parallax_widget .cards {
-    min-width: 100%;
-    padding: 20px;
-  }
 }
